@@ -3,8 +3,8 @@ import datetime
 import os
 # Create your models here.
 def getFileName(request,filename):
-    now_time=datetime.datetime.now().strftime("%Y%M%D%H:%M:%S")
-    New_filename="%S%S"%(now_time,filename)
+    now_time=datetime.datetime.now().strftime("%Y%m%d%H:%M:%S")
+    New_filename="%s%s"%(now_time,filename)
     return os.path.join('uploads/',New_filename)
 
 
